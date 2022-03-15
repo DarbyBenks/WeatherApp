@@ -1,1 +1,70 @@
+#weatherTitle{
+    text-size-adjust: 45px;
+    text-align: left;
+    font-family: sans-serif;
+    color: rgba(255, 255, 255, 0.726);
+}
 
+#weather-form{
+    text-align: center;
+    font-family: sans-serif;
+    color: rgba(255, 255, 255, 0.726);
+}
+
+#location-name{
+    color: rgba(205, 231, 253, 0.582);
+    font-size: 64px;
+}
+
+#location-time{
+    color: rgba(205, 231, 253, 0.582);
+    font-size: 25px;
+    margin-left: 2em;
+}
+
+#location-temp{
+    color: rgba(205, 231, 253, 0.582);
+    font-size: 25px;
+    margin-left: 2em;
+}
+
+#location-icon{
+    margin-left: 3em;
+}
+
+#weatherDesc{
+    color: rgba(205, 231, 253, 0.582);
+    font-size: 25px;
+    margin-left: 5.5em;
+    margin-top: -2em;
+}
+
+#location-Humidity{
+    color: rgba(205, 231, 253, 0.582);
+    font-size: 25px;
+    margin-left: 2em;
+    margin-top: 1.5em;
+}
+
+#location-precip{
+    color: rgba(205, 231, 253, 0.582);
+    font-size: 25px;
+    margin-left: 13em;
+    margin-top: -2.15em;
+}
+
+#location-uv{
+    color: rgba(205, 231, 253, 0.582);
+    font-size: 25px;
+    margin-left: 25em;
+    margin-top: -2.15em;
+}
+
+/* #weather-elements{
+    -webkit-animation: fadein 2s;
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+} */
