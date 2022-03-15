@@ -71,5 +71,5 @@
 
 
 function renderFutureContent(data){
-    console.log("hello")
+   
 }
