@@ -5,6 +5,7 @@
         const weatherApp = `http://api.weatherstack.com/current?access_key=bcf0b630713da760447ab2d08ce91546&query=${inputLocation}&units=f&hourly=1&interval=1`
 
         document.getElementById("weather-elements").innerHTML = ""
+        console.log(weatherApp)
 
         fetch(weatherApp)
         .then(resp => resp.json())
@@ -57,19 +58,22 @@
        uvIndex.id = "location-uv"
        uvIndex.textContent = `Current UV Index: ${data.current.uv_index}`
        console.log(uvIndex.textContent)
-
-       const futureForecast = document.createElement('button')
-       futureForecast.id = "weather-forcast"
-       futureForecast.textContent = "7 Day Forecast"
-       futureForecast.addEventListener('click', renderFutureContent)
-
        
 
-       infoDiv.append(renderedLocation, locationTime, locationTemp, localImage, weatherDesc, locationHumidity, locationPrecip, uvIndex, futureForecast)
+       infoDiv.append(renderedLocation, locationTime, locationTemp, localImage, weatherDesc, locationHumidity, locationPrecip, uvIndex)
       
    }
 
 
-function renderFutureContent(data){
-   
-}
+// function renderFutureContent(){
+//     const inputLocationForecast = document.getElementById('location-name').value;
+//     const futureForecast = `http://api.weatherbit.io/v2.0/forecast/daily?city=${inputLocationForecast}&country=United_States&key=19010eb58084408ea613b9838ef578f1`
+//     fetch(futureForecast)
+//         .then(resp => resp.json())
+//         .then(renderFutureForecast)
+
+// }
+
+// function renderFutureForecast(data){
+//     console.log(data)
+// }
